@@ -3,13 +3,17 @@ import { Routes, Route, Link } from "react-router-dom";
 
 import Home from "./components/Home";
 import About from "./components/About";
+import Nav from "./components/Nav";
 
 function App() {
   return (
-      <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-      </Routes>
+      <div className="bg-gradient-to-r from-slate-500 to-slate-800">
+          <Nav />
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+          </Routes>
+      </div>
   );
 }
 
