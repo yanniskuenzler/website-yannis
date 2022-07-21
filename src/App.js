@@ -7,7 +7,7 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
-      <div className="bg-gradient-to-r from-slate-600 to-slate-800">
+      <div>
           <Nav />
           <Routes>
               <Route path="/" element={<Home />} />
