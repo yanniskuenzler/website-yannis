@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/website-yannis/static/css/main.2de8a97a.css",
+    "main.js": "/website-yannis/static/js/main.fc9ebf09.js",
+    "index.html": "/website-yannis/index.html",
+    "main.2de8a97a.css.map": "/website-yannis/static/css/main.2de8a97a.css.map",
+    "main.fc9ebf09.js.map": "/website-yannis/static/js/main.fc9ebf09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2de8a97a.css",
+    "static/js/main.fc9ebf09.js"
+  ]
+}
