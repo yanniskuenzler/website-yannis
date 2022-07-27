@@ -24,15 +24,11 @@ function TodoList() {
 
     const addNewTodoItem = () => {
         let prevState = [];
-        if (todoItems == null) {
-            prevState.push({
-                content: inputValue,
-                id: crypto.randomUUID()
-            })
-        } else {
+        if (todoItems !== null) {
             prevState = todoItems;
-            prevState.push({content: inputValue, id: crypto.randomUUID()});
         }
+        prevState.push({content: inputValue, id: crypto.randomUUID()});
+
         setTodoItems(prevState);
 
         localStorage.setItem('todo-list-items', JSON.stringify(todoItems || prevState));
