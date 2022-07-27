@@ -2,7 +2,7 @@ import PostGrid from "./PostGrid"
 
 function Home() {
     return (
-        <div>
+        <div className="mx-20">
             <PostGrid />
         </div>
     )

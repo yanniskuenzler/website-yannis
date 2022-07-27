@@ -5,9 +5,9 @@ function Nav() {
         <div>
             <nav className="py-1 bg-neutral-900">
                 <ul className="flex space-x-20 justify-center">
-                    <BasicNavLinks siteName="Home" />
-                    <BasicNavLinks siteName="About" />
-                    <BasicNavLinks siteName="Apps" />
+                    <BasicNavLinks endpoint="/" siteName="Home" />
+                    <BasicNavLinks endpoint="/about" siteName="About" />
+                    <BasicNavLinks endpoint="/apps" siteName="Apps" />
                 </ul>
             </nav>
         </div>
