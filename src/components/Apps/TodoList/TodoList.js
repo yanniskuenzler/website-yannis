@@ -9,7 +9,7 @@ function TodoList() {
     useEffect(() => {
         getAllTodoItems()
     }, [""]);
-    
+
 
     const handleFormChange = (event) => {
             let value = event.target.value;
@@ -23,12 +23,26 @@ function TodoList() {
     }
 
     const addNewTodoItem = () => {
-        let prevState = todoItems;
-        prevState.push(inputValue);
+        let prevState = [];
+        if (todoItems == null) {
+            prevState.push({
+                content: inputValue,
+                id: crypto.randomUUID()
+            })
+        } else {
+            prevState = todoItems;
+            prevState.push({content: inputValue, id: crypto.randomUUID()});
+        }
         setTodoItems(prevState);
 
-        localStorage.setItem('todo-list-items', JSON.stringify(todoItems));
+        localStorage.setItem('todo-list-items', JSON.stringify(todoItems || prevState));
         setInputValue("");
+    }
+
+    const handleDelete = (id) => {
+        let items = todoItems.filter(item => item.id !== id);
+        setTodoItems(items);
+        localStorage.setItem('todo-list-items', JSON.stringify(items));
     }
 
     const getAllTodoItems = () => {
@@ -43,7 +57,11 @@ function TodoList() {
                 handleFormChange={handleFormChange}
                 handleKeyDown={handleKeyDown}
             />
-            {todoItems.map((todoItem, key) => <TodoItem text={todoItem} key={key} />)}
+            {todoItems !== null &&
+                <div className="md:mx-20 mt-5">
+                    {todoItems.map((todoItem) => <TodoItem item={todoItem} handleDelete={handleDelete} key={todoItem.id}/>)}
+                </div>
+            }
         </div>
     )
 }

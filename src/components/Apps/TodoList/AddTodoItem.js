@@ -4,10 +4,10 @@ function AddTodoItem(props) {
             <input
                 type="text"
                 value={props.inputValue}
-                placeholder="neuer Eintrag"
+                placeholder="Todo"
                 onChange={(event) => props.handleFormChange(event)}
                 onKeyDown={(event) => props.handleKeyDown(event)}
-                className="block border rounded m-auto mt-5"
+                className="block border m-auto mt-5 p-1"
             />
         </div>
     )
