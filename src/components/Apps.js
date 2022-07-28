@@ -3,7 +3,7 @@ import App from "../App";
 
 function Apps() {
     return (
-        <div className="mx-20">
+        <div className="md:mx-20">
             <AppGrid />
         </div>
     )
