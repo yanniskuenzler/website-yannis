@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/website-yannis/static/css/main.2de8a97a.css",
-    "main.js": "/website-yannis/static/js/main.71a3f5df.js",
+    "main.css": "/website-yannis/static/css/main.178b015d.css",
+    "main.js": "/website-yannis/static/js/main.98c5b852.js",
     "index.html": "/website-yannis/index.html",
-    "main.2de8a97a.css.map": "/website-yannis/static/css/main.2de8a97a.css.map",
-    "main.71a3f5df.js.map": "/website-yannis/static/js/main.71a3f5df.js.map"
+    "main.178b015d.css.map": "/website-yannis/static/css/main.178b015d.css.map",
+    "main.98c5b852.js.map": "/website-yannis/static/js/main.98c5b852.js.map"
   },
   "entrypoints": [
-    "static/css/main.2de8a97a.css",
-    "static/js/main.71a3f5df.js"
+    "static/css/main.178b015d.css",
+    "static/js/main.98c5b852.js"
   ]
 }
