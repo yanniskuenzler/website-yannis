@@ -1,6 +1,6 @@
 function TodoItem(props) {
     return (
-        <div className="flex gap-3 border p-2 mt-1 bg-gray-400">
+        <div className="flex gap-3 border p-2 mt-1 bg-gradient-to-r from-cyan-200 to-cyan-600 rounded">
             <div className="flex-col">
                 <button
                     onClick={(id) => props.handleDelete(props.item.id)}
